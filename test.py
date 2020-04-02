@@ -81,9 +81,15 @@ print (x % y) # mod 2
 print (x // y)
 
 print (f'Sum: {x} + {y} = {x + y}')
+
 print (f'Ext: {x} - {y} = {x - y}')
+
 print (f'Div: {x} / {y} = {x / y}')
+
 print (f'Mult: {x} * {y} = {x * y}')
+
+print (f'Integer_division: {x} // {y} = {x // y}')
+
 print (f'Modulo: {x} mod {y} = {x % y}')
 
 
