@@ -15,6 +15,15 @@ if phone_number.isdigit():
 else:
 	print('This is not a phone number')
 
+#Lesson 3 Task 2
+phone_number = '123456789a'
+if phone_number.isdigit() and len(phone_number) == 10:
+	print('This is a phone number')
+elif phone_number.isdigit() and len(phone_number) != 10:
+	print("You are using wrong format of a phone number") 
+else:
+	print('This is not a phone number')
+
 
 #Lesson 3 Task 3
 name1 = 'oleksiy'
