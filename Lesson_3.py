@@ -4,11 +4,12 @@
 # from a given string. If the string length is less than 2,
 # return instead of the empty string.
 
-sample_string = 'helloworld'
+string = 'helloworld'
+sample_string = string.strip()
 if len(sample_string) >= 2:
 	print(sample_string[0:2] + sample_string[-2:])
 else:
-	print()
+	print('Empty String')
 print()
 
 
