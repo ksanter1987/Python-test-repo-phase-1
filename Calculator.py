@@ -169,16 +169,28 @@ while True:
 					number2 = number2.strip()
 					if number2[0:].isdigit():
 						number2 = float(number2)
-						break
+						if number2 != 0:
+							break
+						else:
+							continue
 					elif number2[0] == '-' and number2[1:].isdigit():
 						number2 = float(number2)
-						break
+						if number2 != 0:
+							break
+						else:
+							continue						
 					elif number2[1:len(number2)-1].find('.') == number2[1:len(number2)-1].rfind('.') and number2[0:number2.find('.')].isdigit() and number2[number2.find('.')+1:].isdigit():
 						number2 = float(number2)
-						break
+						if number2 != 0:
+							break
+						else:
+							continue						
 					elif number2[0] == '-' and number2[1:len(number2)-1].find('.') == number2[1:len(number2)-1].rfind('.') and number2[1:number2.find('.')].isdigit() and number2[number2.find('.')+1:].isdigit():
 						number2 = float(number2)
-						break
+						if number2 != 0:
+							break
+						else:
+							continue						
 					else:
 						continue
 				print()
@@ -208,16 +220,28 @@ while True:
 					number2 = number2.strip()
 					if number2[0:].isdigit():
 						number2 = float(number2)
-						break
+						if number2 != 0:
+							break
+						else:
+							continue						
 					elif number2[0] == '-' and number2[1:].isdigit():
 						number2 = float(number2)
-						break
+						if number2 != 0:
+							break
+						else:
+							continue						
 					elif number2[1:len(number2)-1].find('.') == number2[1:len(number2)-1].rfind('.') and number2[0:number2.find('.')].isdigit() and number2[number2.find('.')+1:].isdigit():
 						number2 = float(number2)
-						break
+						if number2 != 0:
+							break
+						else:
+							continue						
 					elif number2[0] == '-' and number2[1:len(number2)-1].find('.') == number2[1:len(number2)-1].rfind('.') and number2[1:number2.find('.')].isdigit() and number2[number2.find('.')+1:].isdigit():
 						number2 = float(number2)
-						break
+						if number2 != 0:
+							break
+						else:
+							continue						
 					else:
 						continue
 				print()
@@ -247,16 +271,28 @@ while True:
 					number2 = number2.strip()
 					if number2[0:].isdigit():
 						number2 = float(number2)
-						break
+						if number2 != 0:
+							break
+						else:
+							continue						
 					elif number2[0] == '-' and number2[1:].isdigit():
 						number2 = float(number2)
-						break
+						if number2 != 0:
+							break
+						else:
+							continue						
 					elif number2[1:len(number2)-1].find('.') == number2[1:len(number2)-1].rfind('.') and number2[0:number2.find('.')].isdigit() and number2[number2.find('.')+1:].isdigit():
 						number2 = float(number2)
-						break
+						if number2 != 0:
+							break
+						else:
+							continue						
 					elif number2[0] == '-' and number2[1:len(number2)-1].find('.') == number2[1:len(number2)-1].rfind('.') and number2[1:number2.find('.')].isdigit() and number2[number2.find('.')+1:].isdigit():
 						number2 = float(number2)
-						break
+						if number2 != 0:
+							break
+						else:
+							continue						
 					else:
 						continue
 				print()
@@ -434,44 +470,44 @@ while True:
 				while True:
 					command = input(f"""Введіть математичне рівняння розмеживши знак операції з числами пробілом:
 					
-				1.  додавання '+'
-				2.  віднімання '-'
-				3.  множення '*'
-				4.  ділення '/'
-				5.  ділення націло '//'
-				6.  остача від цілочисельного ділення 'mod'
-				7.  піднести число в степінь '**'
-				8.  визначення корення n-ї степені з числа 'sqrt'
-				9.  вихід з розділу 'exit'
+				  додавання '+'
+				  віднімання '-'
+				  множення '*'
+				  ділення '/'
+				  ділення націло '//'
+				  остача від цілочисельного ділення 'mod'
+				  піднести число в степінь '**'
+				  визначення корення n-ї степені з числа 'sqrt'
+				  вихід з розділу 'exit'
 
 
 				""")
-					command = command.lstrip()
-					command = command.rstrip()
+					command = command.strip()
 					print()
 					if command == 'exit':
 						break
 					text = command.split()
-					number1 = text[0]
-					if number1[0:].isdigit():
-						number1 = float(number1)
-					elif number1[0] == '-' and number1[1:].isdigit():
-						number1 = float(number1)
-					elif number1[1:len(number1)-1].find('.') == number1[1:len(number1)-1].rfind('.') and number1[0:number1.find('.')].isdigit() and number1[number1.find('.')+1:].isdigit():
-						number1 = float(number1)
-					elif number1[0] == '-' and number1[1:len(number1)-1].find('.') == number1[1:len(number1)-1].rfind('.') and number1[1:number1.find('.')].isdigit() and number1[number1.find('.')+1:].isdigit():
-						number1 = float(number1)
-					else:
-						continue
-					number2 = text[2]
-					if number2[0:].isdigit():
-						number2 = float(number2)
-					elif number2[0] == '-' and number2[1:].isdigit():
-						number2 = float(number2)
-					elif number2[1:len(number2)-1].find('.') == number2[1:len(number2)-1].rfind('.') and number2[0:number2.find('.')].isdigit() and number2[number2.find('.')+1:].isdigit():
-						number2 = float(number2)
-					elif number2[0] == '-' and number2[1:len(number2)-1].find('.') == number2[1:len(number2)-1].rfind('.') and number2[1:number2.find('.')].isdigit() and number2[number2.find('.')+1:].isdigit():
-						number2 = float(number2)
+					if len(text) < 3:
+						number1 = text[0]
+						if number1[0:].isdigit():
+							number1 = float(number1)
+						elif number1[0] == '-' and number1[1:].isdigit():
+							number1 = float(number1)
+						elif number1[1:len(number1)-1].find('.') == number1[1:len(number1)-1].rfind('.') and number1[0:number1.find('.')].isdigit() and number1[number1.find('.')+1:].isdigit():
+							number1 = float(number1)
+						elif number1[0] == '-' and number1[1:len(number1)-1].find('.') == number1[1:len(number1)-1].rfind('.') and number1[1:number1.find('.')].isdigit() and number1[number1.find('.')+1:].isdigit():
+							number1 = float(number1)
+						else:
+							continue
+						number2 = text[2]
+						if number2[0:].isdigit():
+							number2 = float(number2)
+						elif number2[0] == '-' and number2[1:].isdigit():
+							number2 = float(number2)
+						elif number2[1:len(number2)-1].find('.') == number2[1:len(number2)-1].rfind('.') and number2[0:number2.find('.')].isdigit() and number2[number2.find('.')+1:].isdigit():
+							number2 = float(number2)
+						elif number2[0] == '-' and number2[1:len(number2)-1].find('.') == number2[1:len(number2)-1].rfind('.') and number2[1:number2.find('.')].isdigit() and number2[number2.find('.')+1:].isdigit():
+							number2 = float(number2)
 					else:
 						continue
 					if text[1] == '+':
@@ -480,11 +516,11 @@ while True:
 						print(f'{number1} - {number2} = {number1 - number2}')
 					elif text[1] == '*':
 						print(f'{number1} * {number2} = {number1 * number2}')
-					elif text[1] == '/':
+					elif text[1] == '/' and number2 != 0:
 						print(f'{number1} / {number2} = {number1 / number2}')
-					elif text[1] == '//':
+					elif text[1] == '//' and number2 != 0:
 						print(f'{number1} // {number2} = {number1 // number2}')
-					elif text[1] == 'mod':
+					elif text[1] == 'mod' and number2 != 0:
 						print(f'{number1} mod {number2} = {number1 % number2}')
 					elif text[1] == '**':
 						print(f'{number1} ** {number2} = {number1 ** number2}')
