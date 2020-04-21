@@ -487,7 +487,7 @@ while True:
 					if command == 'exit':
 						break
 					text = command.split()
-					if len(text) < 3:
+					if len(text) >= 3:
 						number1 = text[0]
 						if number1[0:].isdigit():
 							number1 = float(number1)
@@ -508,7 +508,10 @@ while True:
 							number2 = float(number2)
 						elif number2[0] == '-' and number2[1:len(number2)-1].find('.') == number2[1:len(number2)-1].rfind('.') and number2[1:number2.find('.')].isdigit() and number2[number2.find('.')+1:].isdigit():
 							number2 = float(number2)
+						else:
+							continue
 					else:
+						print('Введіть математичне рівняння у визначеному форматі')
 						continue
 					if text[1] == '+':
 						print(f'{number1} + {number2} = {number1 + number2}')
@@ -528,7 +531,7 @@ while True:
 						print(f'{number1} sqrt {number2} = {number1 ** (1 / number2)}')		
 					else:
 						continue
-					continue
+					
 			if operation.isdigit() and operation == '13':
 				break
 
