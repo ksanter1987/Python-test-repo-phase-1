@@ -13,7 +13,7 @@ while i < 10:
 print(random_list)
 print()
 print(max(random_list))
-print(n)
+print()
 
 # Task 2
 # Exclusive common numbers.
