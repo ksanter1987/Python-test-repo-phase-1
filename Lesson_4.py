@@ -34,7 +34,7 @@ while i < 10:
     i += 1
 print(random_list1)
 print(random_list2)
-common_list = list(set(random_list1) | set(random_list2))
+common_list = list(set(random_list1) & set(random_list2))
 print(common_list)
 
 
