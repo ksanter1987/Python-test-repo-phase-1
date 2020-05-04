@@ -16,9 +16,14 @@ operation_list ={
 	'round': 'Проводимо операцію округлення числа',
 	'exit': 'Вихід з програми'
 } 
-
+#def get_oper(command):
+#	return ''
 
 def supermode(command):
+#	oper = get_oper()
+
+#	left_o, operation, righ_o = command.partition(oper)
+
 	for key in operation_list:
 		if key in command and command[0] != '-':
 			text = command.partition(key)
