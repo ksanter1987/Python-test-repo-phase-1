@@ -18,7 +18,7 @@ def some_func(value):
 
 
 my_list2 = ['1', '2', '3', '4', '5', '6']
-def oops2():
+def oops2():   # На скільки я зрозумів, в функції oops() ми примусово викликаємо KeyError і в функції some_func2() ми відловлюємо вже KeyError, тобто по факту в some_func() і some_func2() нічого не міняється. Ми вручну викликаємо в oops() помилку і далі вже шукаємо її
     number = int(input('Введіть число: '))
     if number > len(my_list2):
         raise KeyError
