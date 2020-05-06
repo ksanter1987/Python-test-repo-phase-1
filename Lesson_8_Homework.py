@@ -3,25 +3,32 @@
 # Then write another function that calls oops inside a try/except state­ment to catch the error. 
 # What happens if you change oops to raise KeyError instead of IndexError?
 
-def oops1():
-    msg = input('Введіть повідомлення: ')
-    if len(msg) < 6:
-        raise IndexError 
-    print(msg[5])
+my_list = ['1', '2', '3', '4', '5', '6']
+def oops():
+    number = int(input('Введіть число: '))
+    if number > len(my_list):
+        raise IndexError
+    return my_list
 
-def oops2():
+def some_func(value):
     try:
-        msg = input('Введіть повідомлення: ')
-        print(msg[5])
+        print(oops() * value)
     except IndexError:
-        print('Малувато тексту')
+        print('В списку немає стільки значень(((')
 
-def oops3(): # результат той самий що і в 1-й функції oops1()
+
+my_list2 = ['1', '2', '3', '4', '5', '6']
+def oops2():
+    number = int(input('Введіть число: '))
+    if number > len(my_list2):
+        raise KeyError
+    return my_list2
+
+def some_func2(value):
     try:
-        msg = input('Введіть повідомлення: ')
-        print(msg[5])
+        print(oops2() * value)
     except KeyError:
-        print('Малувато тексту')
+        print('В списку немає стільки значень(((')
 
 
 # Task 2
