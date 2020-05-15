@@ -14,6 +14,8 @@ try:
 except json.decoder.JSONDecodeError:
 	phonebook = []
 
+if type(phonebook) != list:
+	phonebook = []
 json_file.close()
 dict_pattern = {
 	'first_name': '',
