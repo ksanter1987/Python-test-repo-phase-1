@@ -76,7 +76,7 @@ in other case raises an error. It also increments income if the sell_product met
 -get_all_products() - returns information about all available products in the store.
 
 -get_product_info(product_name) - returns a tuple with product name and amount of items in the store.'''
-
+'''
 class Product:
 	product_type = ''
 	name = ''
@@ -116,11 +116,12 @@ class ProductStore:
 		pass
 
 
-	def sell_product(self, product_name, amount):
-		for self.product_name in self.storage:
-			self.product_name[self.amount] = self.product_name[self.amount - amount]
+	def sell_product(self, name, amount):
+		for item in self.storage:
+			if item == product.name:
+				product_name[self.amount] = self.product_name[self.amount - amount]
 
-
+'''
 
 '''	def set_discount(identifier, percent, identifier_type=’name’):
 	def sell_product(product_name, amount):
@@ -140,10 +141,36 @@ assert s.get_product_info(‘Ramen’) == (‘Ramen’, 290)
 
 white_check_markeyesraised_hands
 '''
+'''
 p1 = Product('Sport', 'Football T-Shirt', 100)
 p2 = Product('Sport', 'Football boots', 50)
 s = ProductStore()
 s.add(p1, 10)
 s.add(p2, 15)
 s.sell_product('Football T-Shirt', 4)
-print(s.storage)
+print(s.storage)'''
+
+
+
+
+
+
+
+
+
+'''Task 4
+Custom exception
+
+Create your custom exception named `CustomException`, you can inherit from base 
+Exception class, but extend its functionality to log every error message to a file 
+named `logs.txt`. Tips: Use __init__ method to extend functionality for saving messages to file'''
+
+
+log_file = open('logs.txt', 'w')
+log_file.close()
+
+
+class CustomException(Exception):
+	def __init__(self, msg):
+		self.msg = msg
+
