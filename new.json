@@ -7,24 +7,24 @@
         "city": "1"
     },
     {
-        "first_name": "2",
-        "last_name": "2",
-        "full_name": "2 2",
-        "phone": "2",
-        "city": "2"
+        "first_name": "alex",
+        "last_name": "kuv",
+        "full_name": "alex kuv",
+        "phone": "097777777",
+        "city": "Rivne"
     },
     {
-        "first_name": "7",
-        "last_name": "7",
-        "full_name": "7 7",
-        "phone": "7",
-        "city": "7"
+        "first_name": "qwe",
+        "last_name": "asd",
+        "full_name": "qwe asd",
+        "phone": "1234",
+        "city": "Kyiv"
     },
     {
-        "first_name": "4",
-        "last_name": "4",
-        "full_name": "4 4",
-        "phone": "4",
-        "city": "4"
+        "first_name": "some",
+        "last_name": "value",
+        "full_name": "some value",
+        "phone": "09876",
+        "city": "Dnipro"
     }
 ]
